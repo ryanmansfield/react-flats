@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <div className="flat-list">
-          <Flat />
+          <FlatList />
         </div>
         <div className="map-container">
           map
