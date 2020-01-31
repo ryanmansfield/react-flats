@@ -8,6 +8,4 @@ const FlatList = (props) => {
     </div>
   );
 };
-
-
 export default FlatList;
