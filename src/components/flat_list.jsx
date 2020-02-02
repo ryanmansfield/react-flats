@@ -2,13 +2,25 @@ import React, { Component } from 'react';
 import Flat from './flat.jsx';
 
 const FlatList = (props) => {
-  <div className="flat-list">
-    return props.flats.map ((flat) => {
+  const renderList = () => {
+    return props.flats.map((flat, index) => {
       return (
-        <Flat/>
+        <Flat
+          flat={flat}
+          key={flat.lat}
+          index={index}
+        />
       );
     });
-  </div>
   };
+
+  return (
+    <div className="flat-list">
+      {renderList()}
+    </div>
+  );
 };
+
+
 export default FlatList;
+
